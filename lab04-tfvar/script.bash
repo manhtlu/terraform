@@ -1,0 +1,1 @@
+echo "Hello Terraform!" > index.html sudo python3 -m http.server 8080
