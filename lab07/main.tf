@@ -25,4 +25,5 @@ output "ssh_command" {
 resource "local_file" "private_key" {
     content  = tls_private_key.pk.private_key_pem
     filename = "private_key.pem"
+    file_permission = "0770"
 }
